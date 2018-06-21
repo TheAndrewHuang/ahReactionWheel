@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.revsup.reactwheel.objects.Wheel;
 
+
 public class ReactionWheelGame extends ApplicationAdapter {
 	SpriteBatch batch;
 	Wheel w;
@@ -27,5 +28,6 @@ public class ReactionWheelGame extends ApplicationAdapter {
 	@Override
 	public void dispose () {
 		batch.dispose();
+		w.dispose();
 	}
 }
